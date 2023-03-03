@@ -15,7 +15,6 @@ function Tasks({userID, task, setTask, allTasks, setAllTasks, currTask, setcurrT
     return (
         <div>
             <h1>Task Manager</h1>
-            <p>Staying organized is our game</p>
             <h1>NEW TASK</h1>
             <form onSubmit={(e) => {
                 e.preventDefault()

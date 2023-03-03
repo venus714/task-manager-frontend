@@ -13,6 +13,13 @@ function Homepage (){
             <NavLink className="home" to="/Signup">
                 SIGN UP
             </NavLink>
+            {/* <form>
+                <input type placeholder="Enter a to do..." className="task-input"/>
+                <button className="button-add" type="submit" > ADD </button>
+            </form> */}
+            <NavLink className="home" to="/task">
+                Tasks
+            </NavLink>
 
         </div>
     )

@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import Homepage from './components/Homepage';
 import Task from './components/Tasks';
 import {useEffect, useState} from 'react';
+import Single from './components/Single';
 
 
 function App(){
@@ -53,20 +54,29 @@ useEffect(() => {
 
 
 }, [userID])
+let [currentTask, setcurrentTask] = useState()
+
+// let [updatedStatus, setUpdatedStatus] = useState({
+//   status: ""
+// })
+
 
   return (
-    <div className='App'>
+    <div className='container'>
+      <div className='app-wrapper'>
       <Routes>
         <Route exact path='/' element={<Homepage/>} />
         <Route exact path='/login' element={<Login loginDetails={loginDetails} setLoginDetails={setLoginDetails}  userID={userID} setUserID={setUserID}/>} />
         <Route exact path='/signup' element={<Signup signupDetails={signupDetails} setSignupDetails={setSignupDetails} />} />
         <Route exact path="/navbar" element={<Navbar/>}/>
         <Route exact path='/homepage' element={<Homepage/>}/>
-        <Route exact path='/task' element={<Task/>} />
+        <Route exact path='/task' element={<Task userID={userID} task={task} setTask={setTask} allTasks={allTasks} setAllTasks={setAllTasks} currentTask={currentTask} setcurrentTask={setcurrentTask}/>}/>
+        <Route path="/tasks/:id" element={<Single currentTask={currentTask}/>}/>
         
       </Routes>
       
 
+    </div>
     </div>
   );
  
