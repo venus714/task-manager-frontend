@@ -19,6 +19,8 @@
   border-radius: 10px;
   box-shadow: 3px 6px 40px #000;
   align-content: center;
+  margin: auto;
+
 
 
 }
@@ -106,3 +108,50 @@ button:focus{
   outline: none;
 }
 
+#taskStatus{
+  outline: none;
+  width: 260px;
+  padding: 15px;
+  margin-right: 25px;
+  font-size: 20px;
+  color: #000000;
+  border-color: #000000;
+  border: 1px solid;
+  border-radius: 10px;
+
+}
+#taskName{
+  outline: none;
+  width: 260px;
+  padding: 15px;
+  margin-right: 25px;
+  font-size: 20px;
+  color: #000000;
+  border-color: #000000;
+  border: 1px solid;
+  border-radius: 10px;
+
+}
+#taskDescription{
+  outline: none;
+  width: 240px;
+  padding: 15px;
+  margin-right: 25px;
+  font-size: 20px;
+  color: #000000;
+  border-color: #000000;
+  border: 1px solid;
+  border-radius: 10px;
+
+}
+#taskDue{
+  outline: none;
+  width: 260px;
+  padding: 15px;
+  margin-right: 25px;
+  font-size: 20px;
+  color: #000000;
+  border-color: #000000;
+  border: 1px solid;
+  border-radius: 10px;
+}

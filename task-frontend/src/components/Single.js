@@ -2,15 +2,15 @@ import React from "react";
 import {useParams, NavLink} from 'react-router-dom'
 
 
-function Single({currTask}) {
+function Single({currentTask}) {
     let currID = useParams().id
     console.log(currID)
     return (
     <div>
-        <h2>{currTask.name}</h2>
-        <p>{currTask.status}</p>
-        <p>{currTask.description}</p>
-        <p>{currTask.due}</p>
+        <h2>{currentTask.name}</h2>
+        <p>{currentTask.status}</p>
+        <p>{currentTask.description}</p>
+        <p>{currentTask.due}</p>
         <NavLink to={"/tasks"}>BACK</NavLink>    
         
         </div>
