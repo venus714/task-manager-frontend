@@ -21,7 +21,7 @@ function Tasks({userID, task, setTask, allTasks, setAllTasks, currTask, setcurrT
                 // console.log(typeof(document.getElementById('taskDue').value))
                 // console.log(!!(task.userID))
 
-                fetch("http://127.0.0.1:9292/tasks/create", {
+                fetch("https://task-manager-back-end.onrender.com//tasks/create", {
                     method: "POST",
                     headers: {
                         "content-type": "application/json"
@@ -84,7 +84,7 @@ function Tasks({userID, task, setTask, allTasks, setAllTasks, currTask, setcurrT
 <input type="submit" value="CREATE"/>
             </form>
 
-            {allTasks.map((task) => (
+            {tasksShown.map((task) => (
         <div key={task.id}>
           <h2>{task.title}</h2>
           <p>{task.description}</p>
@@ -92,12 +92,8 @@ function Tasks({userID, task, setTask, allTasks, setAllTasks, currTask, setcurrT
           <p>{task.status}</p>
         </div>
       ))}
-    
 
-
-            <ul>
-                {tasksShown}
-            </ul>
+           
         </div>
         )
 }
