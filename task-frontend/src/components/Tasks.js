@@ -84,6 +84,16 @@ function Tasks({userID, task, setTask, allTasks, setAllTasks, currTask, setcurrT
 <input type="submit" value="CREATE"/>
             </form>
 
+            {allTasks.map((task) => (
+        <div key={task.id}>
+          <h2>{task.title}</h2>
+          <p>{task.description}</p>
+          <p>{task.due}</p>
+          <p>{task.status}</p>
+        </div>
+      ))}
+    
+
 
             <ul>
                 {tasksShown}

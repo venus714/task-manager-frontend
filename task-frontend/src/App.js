@@ -65,7 +65,7 @@ let [currentTask, setcurrentTask] = useState()
     <div className='container'>
       <div className='app-wrapper'>
       <Routes>
-        <Route exact path='/' element={<Homepage/>} />
+        <Route exact path='/' element={<Login/>} />
         <Route exact path='/login' element={<Login loginDetails={loginDetails} setLoginDetails={setLoginDetails}  userID={userID} setUserID={setUserID}/>} />
         <Route exact path='/signup' element={<Signup signupDetails={signupDetails} setSignupDetails={setSignupDetails} />} />
         <Route exact path="/navbar" element={<Navbar/>}/>
