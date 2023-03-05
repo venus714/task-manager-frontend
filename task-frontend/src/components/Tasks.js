@@ -21,7 +21,7 @@ function Tasks({userID, task, setTask, allTasks, setAllTasks, currTask, setcurrT
                 // console.log(typeof(document.getElementById('taskDue').value))
                 // console.log(!!(task.userID))
 
-                fetch("http://localhost:9292/tasks/create", {
+                fetch("http://127.0.0.1:9292/tasks/create", {
                     method: "POST",
                     headers: {
                         "content-type": "application/json"
@@ -41,7 +41,7 @@ function Tasks({userID, task, setTask, allTasks, setAllTasks, currTask, setcurrT
 
 
 
-                fetch("http://localhost:9292/tasks", {
+                fetch("http://127.0.0.1:9292/tasks", {
                     method: "PATCH",
                     headers: {
                         "content-type": "application/json"

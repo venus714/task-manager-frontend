@@ -10,6 +10,7 @@ import {useEffect, useState} from 'react';
 import Single from './components/Single';
 
 
+
 function App(){
 
 let [loginDetails, setLoginDetails] = useState({
@@ -35,7 +36,7 @@ let [task, setTask] = useState({
 let [allTasks, setAllTasks] = useState([])
 
 useEffect(() => {
-  fetch("http://localhost:9292/tasks", {
+  fetch("http://127.0.0.1:9292/tasks", {
       method: "PATCH",
       headers: {
           "content-type": "application/json"
@@ -72,9 +73,9 @@ let [currentTask, setcurrentTask] = useState()
         <Route exact path='/homepage' element={<Homepage/>}/>
         <Route exact path='/task' element={<Task userID={userID} task={task} setTask={setTask} allTasks={allTasks} setAllTasks={setAllTasks} currentTask={currentTask} setcurrentTask={setcurrentTask}/>}/>
         <Route path="/tasks/:id" element={<Single currentTask={currentTask}/>}/>
-        
-      </Routes>
       
+      </Routes>
+    
 
     </div>
     </div>
