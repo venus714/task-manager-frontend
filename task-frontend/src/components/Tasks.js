@@ -30,7 +30,7 @@ function TaskList() {
     if (editingTaskId) {
       // Update existing task
       fetch(
-        `https://venus-backend-hhw4.onrender.com/tasks/${editingTaskId}`,
+        `https://venus-backend-hhw4.onrender.com/tasks/update/${editingTaskId}`,
         {
           method: "PUT",
           headers: {
@@ -74,7 +74,7 @@ function TaskList() {
   };
 
   const handleDeleteClick = (taskId) => {
-    fetch(`https://venus-backend-hhw4.onrender.com/tasks/${taskId}`, {
+    fetch(`https://venus-backend-hhw4.onrender.com/tasks/destroy/${taskId}`, {
       method: "DELETE",
     })
       .then(() => setTasks((prevState) => prevState.filter((task) => task.id !== taskId)))
