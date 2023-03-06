@@ -36,7 +36,7 @@ let [task, setTask] = useState({
 let [allTasks, setAllTasks] = useState([])
 
 useEffect(() => {
-  fetch("https://task-manager-back-end.onrender.com/tasks", {
+  fetch("http://127.0.0.1:9292/tasks", {
       method: "PATCH",
       headers: {
           "content-type": "application/json"

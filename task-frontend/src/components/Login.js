@@ -39,6 +39,7 @@ function Login() {
 
   return (
     <div>
+      <h1> Task Manager </h1>
       <h2>Login</h2>
       <form onSubmit={handleFormSubmit}>
         <label>
