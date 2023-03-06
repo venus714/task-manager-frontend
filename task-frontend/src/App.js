@@ -36,7 +36,7 @@ let [task, setTask] = useState({
 let [allTasks, setAllTasks] = useState([])
 
 useEffect(() => {
-  fetch("http://127.0.0.1:9292/tasks", {
+  fetch("https://venus-backend-hhw4.onrender.com/tasks", {
       method: "PATCH",
       headers: {
           "content-type": "application/json"

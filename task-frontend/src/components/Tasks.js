@@ -49,7 +49,7 @@ function TaskList() {
       setEditingTaskId(null);
     } else {
       // Add new task
-      fetch("https://venus-backend-hhw4.onrender.com/tasks", {
+      fetch("https://venus-backend-hhw4.onrender.com/tasks/create", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
