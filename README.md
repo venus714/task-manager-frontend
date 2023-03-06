@@ -7,6 +7,8 @@ To run the app locally, clone the repository and run npm install to install the 
 ## Usage
 To start the app, run npm start. The app will start
 
+You can also navigate to this link to use the app https://master--dreamy-sopapillas-99d25d.netlify.app/
+
 ## Backend API
 The app uses a backend API to store and retrieve tasks. The API endpoints used are:
 
