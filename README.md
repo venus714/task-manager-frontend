@@ -1,13 +1,13 @@
-Task List App
+# Task List App
 This is a simple Task List application built using React and a backend API. The app allows the user to add, edit and delete tasks.
 
-Installation
+## Installation
 To run the app locally, clone the repository and run npm install to install the required dependencies.
 
-Usage
+## Usage
 To start the app, run npm start. The app will start
 
-Backend API
+## Backend API
 The app uses a backend API to store and retrieve tasks. The API endpoints used are:
 
 GET /tasks - Get all tasks
