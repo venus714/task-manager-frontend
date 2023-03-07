@@ -20,8 +20,11 @@ https://github.com/venus714/task-management
 The app uses a backend API to store and retrieve tasks. The API endpoints used are:
 
 GET /tasks - Get all tasks
+
 POST /tasks/create - Create a new task
+
 PUT /tasks/update/:id - Update an existing task by ID
+
 DELETE /tasks/destroy/:id - Delete a task by ID
 
 ## Authors
